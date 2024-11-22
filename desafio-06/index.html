@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 05</title>
+
+    
+</head>
+<body>
+    <div>
+        <input type="text" id="entrada">
+        <button onclick="verificacao()">Adicionar</button>
+        <button onclick="ordenar()">Ordenar</button>
+    </div>
+
+
+    <script>
+        var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+   
+        function verificacao() {
+           // Recuperar o valor contido no campo de texto
+           var valor = document.getElementById('entrada').value
+   
+           if(valor === '') {
+           // Verificar se o valor está vazio e acionar um alerta
+               alert('Informe um valor válido')
+   
+           } else if(objetos.includes(valor)) {
+           // Se não, verificar se o valor já existe dentro do Array 
+                alert('Objeto já foi adicionado')
+            } else {
+            // Se não existir, incluir o valor dentro do Array.
+            objetos.push(valor)
+            // Depois limpar o valor contido no campo de entrada de texto.
+            }
+            // limpar valor do campo de entrada
+            document.getElementById('entrada').value = ''
+
+            console.log(objetos)
+           } 
+   
+        function ordenar() {
+            objetos.sort()
+
+        console.log(objetos)
+        }
+   
+       </script>
+</body>
+</html>

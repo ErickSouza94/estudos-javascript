@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    
+
+    <script>
+
+    let media = 6 // média
+        
+    var nota1 = parseFloat(prompt('Coloque sua nota 1: ')) 
+    var nota2 = parseFloat(prompt('Coloque sua nota 2: '))
+    // parseFloat serve para transformar a resposta do prompt (em string) em number.
+
+    let mediaFinal = (nota1 + nota2) / 2
+
+    if (mediaFinal >= media) {
+        document.write('Parabéns! Você passou!')
+    } else {
+        document.write('Que pena, você não passou.')
+    }
+
+    </script>
+    
+</body>
+</html>

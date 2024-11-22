@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+
+    <script>
+
+        function onFoco() {
+            console.log('Recebeu foco')
+        }
+
+        function onBlur() {
+            console.log('Perdeu o foco')
+        }
+
+        function changing() {
+            console.log('Estado modificado')
+        }
+
+    </script>
+    
+  </head>
+  <body>
+    <input onfocus="onFoco()" onblur="onBlur()" type="text" />
+
+    <select onchange="changing()">
+        <option value="1"> -- Selecione --</option>
+        <option value="2">Opção 1</option>
+        <option value="3">Opção 2</option>
+
+    </select>
+  </body>
+</html>

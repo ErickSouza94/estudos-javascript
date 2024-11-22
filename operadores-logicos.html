@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    
+
+    <script>
+    
+    // //true &&(e) true = true
+    // //Verdadeiro se TODAS as expressões forem verdadeiras
+    // if (2 == 2 && 3 >= 1) {
+    // document.write('Verdadeiro')
+    // } else {
+    // document.write('Falso')
+    // }
+    // document.write("<hr>")
+
+    // //true && true && false = false
+    // if (2 == 2 && 2 >= 1 && "a" == "b") {
+    // document.write('Verdadeiro')
+    // } else { 
+    // document.write('Falso')
+    // }
+    // document.write("<hr>")
+    
+    // //true ||(ou) true = true
+    // //Verdadeiro se pelo menos UMA das expressões for verdadeira.
+    // if (2 == 2 || 3 >= 1) {
+    // document.write('Verdadeiro')
+    // } else {
+    // document.write('Falso')
+    // }
+    // document.write("<hr>") 
+    
+    //  //false || true = true
+    //  if (4 == 2 || 3 >= 1) {
+    // document.write('Verdadeiro')
+    // } else {
+    // document.write('Falso')
+    // }
+    // document.write("<hr>")
+
+    // //false || false = false
+    // //Falso se todas as expressões forem falsas.
+    // if (3 == 2 || 3 >= 5) {
+    // document.write('Verdadeiro')
+    // } else {
+    // document.write('Falso')
+    // }
+    // document.write("<hr>")
+
+    // //true = false
+    // //Neste caso, o operador de negação inverte a expressão.
+    // // Exemplo : 4 não é igual a 2 = true
+    // if (!(4 == 2)) {
+    // document.write('Verdadeiro')
+    // } else {
+    // document.write('Falso')
+    // }
+    // document.write("<hr>")
+
+    let media = 6 // média
+    let faltas = 4 // falta
+        
+    var nota1 = parseFloat(prompt('Coloque sua nota 1: ')) 
+    var nota2 = parseFloat(prompt('Coloque sua nota 2: '))
+    var quantidadeFaltas = parseFloat(prompt('Digite o número de faltas do aluno: '))
+    // parseFloat serve para transformar a resposta do prompt (em string) em number.
+
+    let mediaFinal = (nota1 + nota2) / 2
+
+    /*
+    if (mediaFinal >= media && quantidadeFaltas <= faltas) {
+        document.write('Parabéns! Você passou!')
+    } else {
+        document.write('Que pena, você não passou.')
+    }
+    */
+
+    var resultado = (mediaFinal >= media && quantidadeFaltas <= faltas)  ? 'Aprovado' : 'Reprovado'
+    document.write(resultado)
+
+    </script>
+</body>
+</html>

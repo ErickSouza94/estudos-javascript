@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="p-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 05</title>
+</head>
+<body>
+    
+    <input onfocus="mudarBackground('yellow')" onblur="estiloNormal()" oninput="caracter()" type = "text" id="entrada"/>
+
+
+
+
+
+    <script>
+        function mudarBackground(corDeFundo) {
+           document.getElementById('entrada').style.background = corDeFundo
+        }
+
+        function estiloNormal() {
+            document.getElementById('entrada').style.background = ''
+        }
+
+        function caracter() {
+            var caracter = document.getElementById('entrada').value
+            if (caracter.length <= 2) {
+                document.getElementById('entrada').style.background = 'red'
+            } else {
+                document.getElementById('entrada').style.background = 'green'
+            }
+        } 
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScrpit</title>
+
+    <style>
+        .estilo1 {
+            background-color: red;
+            color: white;
+        }
+
+        .estilo2{
+            background-color: rgba(0, 0, 255, 0.349);
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="mensagem" class="estilo1">
+        <h1>Modificando a classe</h1>
+        <button onclick="modificarEstilo()">Aplicar classe</button>
+    </div>
+
+
+
+    <script>
+        function modificarEstilo() {
+            document.getElementById('mensagem').className = 'estilo2'
+        }
+      
+    </script>
+
+</body>
+</html>
